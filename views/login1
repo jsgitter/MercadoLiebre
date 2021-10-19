@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title> Mercado Liebre Flex-Box</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"> 
+
+        <script src="https://kit.fontawesome.com/2752ae1859.js" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="/css/styles.css">
+
+    </head>
+
+    <body>
+        
+        <main style="width: 100%; border: 1px solid red">
+            <div class="registro-header">    
+                <h2 style="text-align: center">Logging</h2>
+                <p style="text-align: center; font-size: small"><a href="/">Volver a Home</a></p>
+            </div>
+            
+            <form class="login" action="/login" method="POST">
+                <p>
+                    <label for="username">Usuario</label>
+                    <input type="text" name="username" id="usename" required>
+                </p>
+
+                <p>
+                    <label for="contrasena">Contraseña</label>
+                    <input type="password" name="contrasena" id="contrasena" required>
+                </p>
+
+                <div class="div-items">    
+                    <div class="rowflex">
+                        <button type="submit">Cerrar</button>
+                        <button type="submit">OK</button>
+                    </div>
+                </div>        
+            </form>
+
+        </main>
+        
+    </body>    

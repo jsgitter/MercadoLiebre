@@ -1,0 +1,280 @@
+/* ************* Estilos para index.html ************** */
+
+* {
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+    /*border: 1px solid red;*/
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    min-width: 361;
+    max-width: 769;
+    width:90%;
+}
+
+h4 {
+    text-align: center;
+}
+
+.cuerpo {
+    font-size: 12px;
+    text-align: justify;
+}
+
+.titular {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.copyright {
+    font-size: x-small;
+}
+
+/*-----------------------header----------------------- */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    background-color: #eac926;
+    width: 100%;
+}
+
+.flex-logoYbusqueda {
+    display:flex;
+    flex-direction: row;
+    vertical-align: middle;
+    flex-wrap: nowrap;
+    justify-content:space-around;
+    height: 100%;
+}
+
+.flex-busqueda {
+    padding: 21px 261px 21px 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    vertical-align: middle;
+    width: 50%;
+    border: 0px;
+}
+
+.compra-en-cuotas {
+    font-size: small;
+    font-weight: bolder;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.burger {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 5rem;
+    background-color: blue;
+    padding: 10px 5px 10px 5px;
+}
+
+.fa-bars {
+    color: white;
+}
+
+/*------------------------main------------------------ */
+main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    background-color: lightgray;
+    width:100%;
+}
+
+.banner {
+    display: block;
+    width: auto;
+    height: auto;
+    justify-self: stretch;
+}
+
+section {
+    width: auto;
+    padding: 10px 15px 15px 15px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-content: center;
+}
+
+article {
+    width: auto;
+    margin-bottom: 13px;
+    padding: 10px 0px 20px 0px;
+    border-radius: 7px;
+    background-color: white;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+}
+article:hover {
+    width: auto;
+    margin-bottom: 13px;
+    padding: 10px 0px 20px 0px;
+    border-radius: 7px;
+    background-color: white;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 3px 3px red, -1em 0 0.4em olive;
+}
+.main-section-article:hover p.descripcion {
+    opacity: 1;
+    font-size: 16px;
+    font-weight: bold;
+}
+.main-section-article:hover .main-section-article-div-i {
+    /**************/
+    transform: rotate(-90deg);
+    color: red;
+    /**************/
+    width: 100%;
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 33px;
+    top: -15px;
+}
+.main-section-article-div {
+    width: 100%;
+    padding: 0px;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    flex-direction: row; 
+    justify-content: stretch; 
+    border-top: 1px solid #39b54a;
+}
+.main-section-article-div-i {
+    width: 100%;
+    display: block;
+    color: #39b54a;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 33px;
+    top: -15px;
+    transition: all;
+}
+
+.precio {
+font-size: 18px;
+width: 30%
+}
+    
+.descuento {
+    font-size: 16px;
+    width: 70%;
+    color: #39b54a;
+    font-weight: bold;
+}
+    
+.descripcion {
+    opacity: 0;
+}
+ 
+/*------------------------footer---------------------- */
+footer {
+    padding: 0px 10px 10px 10px;
+    background-color: aliceblue;
+    width:auto;
+    text-align: center;
+}
+
+/*-------------------------Fin------------------------ */
+@media (min-width: 361) {
+    
+}
+
+@media (min-width: 761) {
+    /*box-shadow: 0px 0px 10px rgb ( 100 , 100 , 100 );*/
+
+}
+/* ************* Fin Estilos para index.html ************** */
+
+/* ************** Estilos para registro.html ************** */
+.registro-header {
+    display: block;
+    width: 100%;
+    background-color: lightgray;
+}
+
+.registro {
+    /*width: 17vw;*/
+    width: 100%;
+    padding: 13px 0px 13px 0px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    text-align: left;
+    background-color: #eac926;
+}
+
+.barra-titulo {
+    width: 100%;
+    background-color: blue;
+    color: white;
+}
+
+.div-items {
+    display: block;
+    padding: 5px;
+}
+/* *********** Fin Estilos para registro.html ************* */
+
+/* *************** Estilos para login.html **************** */
+.login {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9rem;
+    border: 1px solid rebeccapurple;
+    width: 95%;
+    padding: 13px 0px 13px 0px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-self: center;
+    text-align: left;
+    background-color: #eac926;
+}
+
+.rowflex {
+    border: 1px solid rebeccapurple;
+    width: 27vw;
+    padding: 7px 13px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+}
+/* ************* Fin Estilos para login.html ************** */
