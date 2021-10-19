@@ -8,7 +8,7 @@ const PORT    = 3014;
 
 app.use( express.static( path.join( __dirname, `./public` ) ) );
 
-app.listen( PORT, () => { console.log( `Express arriba en port ${PORT}` ) } );
+app.listen( process.env.PORT || PORT, () => { console.log( `Express arriba en port ${PORT}` ) } );
 
 //app.get( "/", (req,res) => { res.send( "Express arriba " ) } );
 
