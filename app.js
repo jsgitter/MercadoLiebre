@@ -4,11 +4,11 @@ const path    = require( "path" );
 
 const app = express();
 
-const PORT    = 3014;
+const PUERTO = 3014;
 
 app.use( express.static( path.join( __dirname, `./public` ) ) );
 
-app.listen( process.env.PORT || PORT, () => { console.log( `Express arriba en port ${PORT}` ) } );
+app.listen( process.env.PORT || PUERTO, () => { console.log( `Express arriba en port ${PUERTO}` ) } );
 
 //app.get( "/", (req,res) => { res.send( "Express arriba " ) } );
 
