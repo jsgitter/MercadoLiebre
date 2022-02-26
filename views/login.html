@@ -18,29 +18,23 @@
 
     <body>
         
-        <main style="width: 100%; border: 1px solid red">
-            <div class="registro-header">    
-                <h2 style="text-align: center">Logging</h2>
-                <p style="text-align: center; font-size: small"><a href="/">Volver a Home</a></p>
-            </div>
+        <main style="width: 100%;">
             
             <form class="login" action="/login" method="POST">
-                <p>
-                    <label for="username">Usuario</label>
-                    <input type="text" name="username" id="usename" required>
-                </p>
 
-                <p>
-                    <label for="contrasena">Contraseña</label>
-                    <input type="password" name="contrasena" id="contrasena" required>
-                </p>
+                <div class="registro-header">    
+                    <h2 style="text-align: center">Logging</h2>
+                    <p style="text-align: center; font-size: small"><a href="/">Volver a Home</a></p>
+                </div>
 
-                <div class="div-items">    
-                    <div class="rowflex">
-                        <button type="submit">Cerrar</button>
-                        <button class="btn-submit" type="submit">OK</button>
-                    </div>
+                <input class="input" type="text" name="username" id="usename" required placeholder="Nombre de Usuario" autofocus minlength="5">
+                <input class="input" type="password" name="contrasena" id="contrasena" required placeholder="Ingresá tu Contraseña" minlength="8">
+   
+                <div class="rowflex">
+                    <button class="btn-submit" type="submit">Cerrar</button>
+                    <button class="btn-submit" type="submit">Enviar</button>
                 </div>        
+                
             </form>
 
         </main>

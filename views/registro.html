@@ -20,43 +20,18 @@
         <header></header>
         
         <main style="border: 1px solid red">
-            <div class="registro-header">    
-                <h2 style="text-align: center">Registro</h2>
-                <p style="text-align: center; font-size: small"><a href="/">Volver a Home</a></p>
-            </div>
 
             <form class="registro" action="/registro" method="POST">
-                <div class="div-items">
-                    <label for="nomyapel">Nombre y apellido</label>
-                    <input type="text" name="nomyapel" id="nomyapel" required>
-                </div>    
-                <div class="div-items">                
-                    <label for="nomusuario">Nombre de usuari@</label>
-                    <input type="text" name="nomusuario" id="nomusuario" required>
-                </div>
-                <div class="div-items">
-                    <label for="fechanac">Fecha de nacimiento</label>
-                    <input type="date" name="fechanac" id="fechanac" required>
 
-                </div>
-                <div class="div-items">
-                    <label for="domicilio">Domicilio</label>
-                    <input type="text" name="domicilio" id="domicilio">
+                <div class="registro-header">    
+                    <h2 style="text-align: center">Registro</h2>
+                    <p style="text-align: center; font-size: small"><a href="/">Volver a Home</a></p>
                 </div>
 
-                <!-- ----------------------------------------------------- -->
-                <div class="div-items">
-                    <p class="barra-titulo">
-                        <label>Perfil de Usuario</label>
-                    </p>
-                    <div class="rowflex">
-                        <label for="comprar">Comprar</label>
-                        <input type="radio" name="comprar" value="comprar" id="comprar">
-                    
-                        <label for="vender">Vender</label>
-                        <input type="radio" name="comprar" value="vender" id="vender" selected>
-                    </div>
-                </div>
+                <input class="input" type="text" name="nomyapel" id="nomyapel" required placeholder="Nombre y apellido" autofocus minlength="5">
+                <input class="input" type="text" name="nomusuario" id="nomusuario" required placeholder="Nombre de usuari@" minlength="5">
+                <input class="input" type="date" name="fechanac" id="fechanac" required placeholder="Fecha de nacimiento">
+                <input class="input" type="text" name="domicilio" id="domicilio" placeholder="Domicilio" minlength="15">
 
                 <div class="div-items">
                     <p class="barra-titulo">
@@ -67,51 +42,38 @@
                         </select>
                     </p>
                 </div>
+                <br>
+     
+                <label>Categorías de Interés</label>
+                <div class="rowflex">
+                    <label for="electro">Electro</label>
+                    <input type="checkbox" name="interes" value="electro" id="electro">
+                    <label for="moda">Moda</label>
+                    <input type="checkbox" name="interes" value="moda" id="moda">
+                    <label for="hogar">Hogar</label>
+                    <input type="checkbox" name="interes" value="hogar" id="hogar">
+                    <label for="jugueteria">Juguetería</label>
+                    <input type="checkbox" name="interes" value="jugueteria" id="jugueteria">
+                    <label for="vidasana">Vida Sana</label>
+                    <input type="checkbox" name="interes" value="vidasana" id="vidasana">
+                </div>
+                <br>
 
-                <!-- ----------------------------------------------------- -->
-                <div class="div-items">
-                    <p class="barra-titulo">
-                        <label>Categorías de Interés</label>
-                    </p>
-                    <div class="rowflex">
-                        <label for="electro">Electro</label>
-                        <input type="checkbox" name="interes" value="electro" id="electro">
-                        <label for="moda">Moda</label>
-                        <input type="checkbox" name="interes" value="moda" id="moda">
-                        <label for="hogar">Hogar></label>
-                        <input type="checkbox" name="interes" value="hogar" id="hogar">
-                        <label for="jugueteria">Juguetería</label>
-                        <input type="checkbox" name="interes" value="jugueteria" id="jugueteria">
-                        <label for="vidasana">Vida Sana</label>
-                        <input type="checkbox" name="interes" value="vidasana" id="vidasana">
-                    </div>
+                <label>Subí tu foto</label>
+                <div>
+                    <input class="input" type="file" name="foto" accept=".jpg">
                 </div>
-                                    
-                </label>
-
-                <!-- ----------------------------------------------------- -->
-                <div class="div-items">
-                    <label>Foto de usuario</label>
-                    <input type="file" name="foto" accept=".jpg">
-                </div>
-                <div class="div-items">
-                    <label for="pass">Contraseña</label>
-                    <input type="password" name="pass" id="pass" required placeholder="Combinar más de 8: Letras, números, mayúsculas, minúsculas">
-                </div>
-                <div class="div-items">
-                    <label for="confpass">Confirmar contraseña</label>
-                    <input type="password" name="confpass" id="confpass" required placeholder="repetir la contraseña ingresada arriba">
-                </div>                
                 
-                <!-- ----------------------------------------------------- -->
-                <div class="div-items">    
-                    <div class="rowflex">
-                        <button type="reset">Borrar</button>
-                        <button type="submit">Enviar</button>
-                    </div>
+                <input class="input" type="password" name="pass" id="pass" required placeholder="Combinar más de 8: Letras, números, mayúsculas, minúsculas" aria-placeholder="Contraseña" minlength="8">
+                <input class="input" type="password" name="confpass" id="confpass" required placeholder="repetir la contraseña ingresada arriba" aria-placeholder="Confirmar contraseña" minlength="8">
+                
+                <div class="rowflex">
+                    <button class="btn-submit" type="reset">Borrar</button>
+                    <button class="btn-submit" type="submit">Enviar</button>
                 </div>
 
             </form>
+
         </main>
     
         <footer></footer>

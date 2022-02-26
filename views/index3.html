@@ -22,21 +22,21 @@
         <header>
             <div class="flex-logoYbusqueda">
 
-                <img class="col-s-12" style="width: 51vw; height: auto" src="/images/logo-mercado-liebre.svg" alt="Logo">
+                <img width="50%" src="/images/logo-mercado-liebre.svg" alt="Logo">
                 
-                <div>
+                <div class="flex-busqueda">
                     <form action="" method="GET">
-                        <div  class="col-s-12 flex-busqueda">
-                            <input vertical-align="middle" type="text" placeholder="Buscar producto, marcas">
-                            <button vertical-align="middle" ><i class="fas fa-search"></i></button>
-                        </div>
+                        <input vertical-align="middle" type="text" placeholder="Buscar producto, marcas">
+                        <button vertical-align="middle" >
+                            <i class="fas fa-search"></i>
+                        </button>
                     </form>
                 </div>
             </div>
 
             <i class="fas fa-hand-holding-usd">Comprá en cuotas y sin tarjeta de crédito</i>
 
-            <nav>
+            <nav class="menu">
                 <ul type="none">
                     <li><a href="#">Ofertas</a></li>
                     <li><a href="#">Tiendas Oficiales</a></li>
@@ -44,7 +44,7 @@
                     <li><a href="#">Ayuda</a></li>
                 </ul>
                 
-                <ul type="none col-s-12">
+                <ul type="none">
                     <li><a href="/registro">Creá tu cuenta</a><i class="fas fa-address-card"></i></li>
                     <li><a href="/login">Ingresá</a><i class="fas fa-sign-in-alt"></i></li>
                     <li><a href="#">Mis compras</a><i class="fas fa-shopping-basket"></i></li>
@@ -60,10 +60,9 @@
             
             <img class="banner" src="./images/img-home-banner.jpg" alt="banner">
 
-            <p>Basado en tus últimas visitas</p>
-            <!-- <section class="flex-articles"> -->
-            <section class="grid-container">    
-                <article class="col-s-12 main-section-article container-item">
+            <p class="titular">Basado en tus últimas visitas</p>
+            <section>
+                <article class="main-section-article">
                     <img src="./images/img-cafetera-moulinex.jpg" alt="img-cafetera-moulinex">
                     <div class="prod-detalle-separador"></div>
                         <div class="div-prod-detalle">
@@ -78,7 +77,7 @@
                         </div>
                 </article>
                 
-                <article class="col-s-12 main-section-article container-item">
+                <article class="main-section-article">
                     <img src="./images/img-macbook-pro-2019.jpg" alt="img-macbook-pro-2019.jpg">
                     <div class="prod-detalle-separador"></div>
                     <div class="div-prod-detalle">
@@ -93,7 +92,7 @@
                     </div>
                 </article>
 
-                <article class="col-s-12 main-section-article container-item">
+                <article class="main-section-article">
                     <img src="/images/img-samsung-galaxy-s10.jpg" alt="img-samsung-galaxy-s10.jpg">
                     <div class="prod-detalle-separador"></div>
                     <div class="div-prod-detalle">
@@ -108,7 +107,7 @@
                     </div>
                 </article>
 
-                <article class="col-s-12 main-section-article container-item">
+                <article class="main-section-article">
                     <img src="/images/img-tv-samsung-smart.jpg" alt="img-tv-samsung-smart.jpg">
                     <div class="prod-detalle-separador"></div>
                     <div class="div-prod-detalle">
@@ -125,10 +124,9 @@
 
             </section>
 
-            <p class="col-s-9 titular">Ofertas</p>
-            <!-- <section class="flex-articles"> -->
-            <section class="grid-container container-item">
-                <article class="col-s-12 main-section-article">
+            <p class="titular">Ofertas</p>
+            <section>                
+                <article class="main-section-article">
                     <img src="./images/img-cafetera-moulinex.jpg" alt="img-cafetera-moulinex">
                     <div class="prod-detalle-separador"></div>
                     <div class="div-prod-detalle">
@@ -143,7 +141,7 @@
                     </div>
                 </article>
 
-                <article class="col-s-12 main-section-article container-item">
+                <article class="main-section-article">
                     <img src="./images/img-macbook-pro-2019.jpg" alt="img-macbook-pro-2019.jpg">
                     <div class="prod-detalle-separador"></div>
                     <div class="div-prod-detalle">
@@ -158,7 +156,7 @@
                     </div>
                 </article>
 
-                <article class="col-s-12 main-section-article container-item">
+                <article class="main-section-article">
                     <img src="/images/img-samsung-galaxy-s10.jpg" alt="img-samsung-galaxy-s10.jpg">
                     <div class="prod-detalle-separador"></div>
                     <div class="div-prod-detalle">
@@ -173,7 +171,7 @@
                     </div>
                 </article>
 
-                <article class="col-s-12 main-section-article container-item">
+                <article class="main-section-article">
                     <img src="/images/img-tv-samsung-smart.jpg" alt="img-tv-samsung-smart.jpg">
                     <div class="prod-detalle-separador"></div>
                     <div class="div-prod-detalle">
@@ -193,7 +191,7 @@
 
         <footer class="flex-vertical">
             <div class="flex-fit">
-                <section class="col-s-12 flex-vertical">
+                <section class="flex-vertical">
                     <div class="footer-icon"><i class="fas fa-credit-card footer-icons footer-icon"></i></div>
                     <h4>Pagá con tarjeta o en efectivo<br></h4>
                     <p class="cuerpo"> Con MercadoLiebreCash tenés cuotas sin interés 
@@ -202,7 +200,7 @@
                     </p>
                 </section>
     
-                <section  class="col-s-12 flex-vertical">
+                <section  class="flex-vertical">
                     <div class="footer-icon"></div><i class="fas fa-gift footer-icons footer-icon"></i>
                     <h4>Envío gratis desde $ 2.500</h4>
                     <p class="cuerpo">Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
@@ -210,7 +208,7 @@
                     </p>
                 </section>
     
-                <section  class="col-s-12 flex-vertical">
+                <section  class="flex-vertical">
                     <div class="footer-icon">
                         <i class="fas fa-user-shield footer-icons"></i></div>
                     <h4>Seguridad, de principio a fin</h4>
