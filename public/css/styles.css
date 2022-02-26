@@ -271,8 +271,10 @@ footer {
 }  
 
 /*-------------- Estilos para login.html ------------- */
+
 .btn-submit:hover {
     color:gold;
+    background-color: #0022AA;
     border: 2px solid gold;
     font-size: 1vw;
 }
@@ -284,7 +286,7 @@ footer {
     margin: 7px;
     color: whitesmoke;
     font-size: 2vw;
-    background-color: #0022AA;
+    background-color:cornflowerblue;
 }
 
 .input {
@@ -441,6 +443,13 @@ footer {
         border-color: #0022AA;
     }
     
+    .btn-submit:hover {
+        color:gold;
+        background-color: #0022AA;
+        border: 2px solid gold;
+        font-size: 1vw;
+    }
+
     .btn-submit {
         border-color: #0022AA;
         border-radius: 5px;
@@ -448,9 +457,27 @@ footer {
         margin: 7px;
         color: whitesmoke;
         font-size: 2.1vw;
-        background-color: #0022AA;
+        background-color:cornflowerblue;;
     }
     
+    .login {
+        font-family: 'Roboto', sans-serif;
+        font-size: 0.9rem;
+        border: 1px solid #eac926;
+        border-radius: 5px;
+        width: 61vw;
+        margin: 7px;
+        margin-bottom: 13px;
+        padding: 13px 0px 13px 13px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        align-self: center;
+        text-align: left;
+        background-color: #eac926;
+    }
+
     .rowflex {
         border: 2px solid;
         border-color: #0022AA;
@@ -511,6 +538,13 @@ footer {
         border-color: #0022AA;
     }
     
+    .btn-submit:hover {
+        color:gold;
+        background-color: #0022AA;
+        border: 2px solid gold;
+        font-size: 1vw;
+    }
+
     .btn-submit {
         border-color: #0022AA;
         border-radius: 5px;
@@ -518,7 +552,7 @@ footer {
         margin: 7px;
         color: whitesmoke;
         font-size: 1.3vw;
-        background-color: #0022AA;
+        background-color: cornflowerblue;
     }
     
     .rowflex {
