@@ -117,9 +117,11 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 5rem;
+    width: 7vw;
+    border-radius: 9px;
     background-color: blue;
-    padding: 10px 5px 10px 5px;
+    padding: 7px 5px 7px 5px;
+    margin: 7px;
 }
 
 .fa-bars {
@@ -360,6 +362,11 @@ footer {
 /* ********************* Media Queries ******************** */
 @media only screen and (min-width: 128px) {
 
+    
+    ul {
+        display: none;
+    }
+    
     .grid-container {
         display:inline-block;
     }
@@ -459,7 +466,12 @@ footer {
 }
 
 @media only screen and (min-width: 361px) {
-    /* Tablets */
+    /* Mobil */
+
+    ul {
+        display: none;
+    }
+
     .col-s-1 {width: 8.33%;}
     .col-s-2 {width: 16.66%;}
     .col-s-3 {width: 25%;}
@@ -611,6 +623,15 @@ footer {
 
 @media only screen and (min-width: 769px) {
     /* For desktop */
+
+    
+    ul {
+        display: block;
+    }
+
+    .burger {
+        display: none;
+    }
 
     .flex-fit {
         display: flex;
