@@ -95,7 +95,6 @@ header {
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
-    /*justify-items: center; */
     vertical-align: middle;
     width: 33%;
     border: 0px;
@@ -187,61 +186,69 @@ article:hover {
 
 /* ------------------- de carrito verde ------------------- */
 
-    .main-section-article:hover .main-section-article-div-i {
-        /**************/
-        transform: rotate(-90deg);
-        color: #39b54a;
-        /**************/
-        display: block;
-        font-size: 2vw;
-        padding: 7px;
-        width: 3.7vw; /* circulo del camincito */
-        height: auto;
-        border: 1px solid #39b54a;
-        background-color: #FFF;
-        border-radius: 50%;
-        position: absolute;
-        right: 73px;
-        top: -25px;
-    }
-    .main-section-article-div {
-        width: 100%;
-        padding: 0px;
-        display: flex;
-        position: relative;
-        flex-wrap: wrap;
-        flex-direction: row; 
-        justify-content: stretch; 
-    }
-    .main-section-article-div-i {
-        /* width: 100%; */
-        display: block;
-        color: #39b54a;
-        font-size: 2vw;
-        padding: 7px;
-        width: 3.7vw; /* circulo del camioncito */
-        height: auto;
-        border: 1px solid #39b54a;
-        background-color: #FFF;
-        border-radius: 50%;
-        position: absolute;
-        right: 73px;
-        top: -25px;
-        transition: all;
-    }
+.main-section-article:hover .main-section-article-div-i {
+    /**************/
+    transform: rotate(-90deg);
+    color: #39b54a;
+    /**************/
+    display: block;
+    font-size: 4vw;
+    padding: 7px;
+    width: 7.7vw; /* circulo del camincito */
+    height: auto;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 43px;
+    top: -5px;
+}
+
+.main-section-article-div {
+    width: 100%;
+    padding: 0px;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    flex-direction: row; 
+    justify-content: stretch; 
+}
+  
+.main-section-article-div-i {
+       
+    display: block;
+    color: #39b54a;
+    font-size: 4vw;
+    padding: 6px;
+    width: 7.7vw;
+    height: auto;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 43px;
+    top: -5px;
+    transition: all;
+}
+
 /* ------------------ Fin de carrito verde ------------------- */
 
 .prod-detalle-separador {
     border: 1px solid #ebebeb;
 }
- 
+
+.precio {
+    font-size: 1.3vw;
+    width: auto;
+    }  
 .descuento {
-    font-size: 1.5vw;
+    font-size: 1.3vw;
     margin-left: 1vw;
     width: auto;
     color: #39b54a;
     font-weight: bold;
-}   
+}
+  
 .descripcion {
     opacity: 0;
 }
@@ -351,6 +358,106 @@ footer {
 }
 
 /* ********************* Media Queries ******************** */
+@media only screen and (min-width: 128px) {
+
+    .grid-container {
+        display:inline-block;
+    }
+
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+
+    .main-section-article:hover .main-section-article-div-i {
+        /**************/
+        transform: rotate(-90deg);
+        color: #39b54a;
+        /**************/
+        display: block;
+        font-size: 2vw;
+        padding: 2px;
+        width: 3vw; /* circulo del camincito */
+        height: auto;
+        border: 1px solid #39b54a;
+        background-color: #FFF;
+        border-radius: 50%;
+        position: absolute;
+        right: 33px;
+        top: -9px;
+    }
+    
+    .main-section-article-div {
+        width: 100%;
+        padding: 0px;
+        display: flex;
+        position: relative;
+        flex-wrap: wrap;
+        flex-direction: row; 
+        justify-content: stretch; 
+    }
+      
+    .main-section-article-div-i {
+           
+        display: block;
+        color: #39b54a;
+        font-size: 2vw;
+        padding: 2px;
+        width: 3vw;
+        height: auto;
+        border: 1px solid #39b54a;
+        background-color: #FFF;
+        border-radius: 50%;
+        position: absolute;
+        right: 33px;
+        top: -9px;
+        transition: all;
+    }
+    
+    /* ------------------ Fin de carrito verde ------------------- */
+    
+    .prod-detalle-separador {
+        border: 1px solid #ebebeb;
+    }
+    
+    .precio {
+        font-size: 1.3vw;
+        width: auto;
+        }  
+    .descuento {
+        font-size: 1.3vw;
+        margin-left: 1vw;
+        width: auto;
+        color: #39b54a;
+        font-weight: bold;
+    }
+      
+   
+.precio {
+    font-size: 2.1vw;
+    width: auto;
+    }  
+.descuento {
+    font-size: 2.1vw;
+    margin-left: 1vw;
+    width: auto;
+    color: #39b54a;
+    font-weight: bold;
+}
+  
+.descripcion {
+    opacity: 0;
+}
+}
+
 @media only screen and (min-width: 361px) {
     /* Tablets */
     .col-s-1 {width: 8.33%;}
@@ -382,17 +489,18 @@ footer {
         color: #39b54a;
         /**************/
         display: block;
-        font-size: 1.5vw;
-        padding: 5px;
-        width: 2vw; /* circulo del camincito */
+        font-size: 4vw;
+        padding: 7px;
+        width: 7.5vw; /* circulo del camincito */
         height: auto;
         border: 1px solid #39b54a;
         background-color: #FFF;
         border-radius: 50%;
         position: absolute;
-        right: 33px;
-        top: -25px;
+        right: 43px;
+        top: -46px;
     }
+
     .main-section-article-div {
         width: 100%;
         padding: 0px;
@@ -402,21 +510,24 @@ footer {
         flex-direction: row; 
         justify-content: stretch; 
     }
+  
     .main-section-article-div-i {
+       
         display: block;
         color: #39b54a;
-        font-size: 1.5vw;
-        padding: 4px;
-        width: 2vw;
+        font-size: 4vw;
+        padding: 6px;
+        width: 7.5vw;
         height: auto;
         border: 1px solid #39b54a;
         background-color: #FFF;
         border-radius: 50%;
         position: absolute;
-        right: 33px;
-        top: -25px;
+        right: 43px;
+        top: -46px;
         transition: all;
     }
+
     .main-section-article:hover p.descripcion {
         opacity: 0;
 
@@ -427,9 +538,16 @@ footer {
         padding-top: 15px;
     }
     .precio {
-    font-size: 1.5vw;
+    font-size: 3vw;
     width: auto;
     }  
+    .descuento {
+        font-size: 3vw;
+        margin-left: 1vw;
+        width: auto;
+        color: #39b54a;
+        font-weight: bold;
+    }
 
     .grid-container {
         display:inline-block;
@@ -565,6 +683,63 @@ footer {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content:center;
+    }
+
+    .main-section-article:hover .main-section-article-div-i {
+        /**************/
+        transform: rotate(-90deg);
+        color: #39b54a;
+        /**************/
+        display: block;
+        font-size: 2vw;
+        padding: 7px;
+        width: 3.5vw; /* circulo del camincito */
+        height: auto;
+        border: 1px solid #39b54a;
+        background-color: #FFF;
+        border-radius: 50%;
+        position: absolute;
+        right: 5px;
+        top: -47px;
+    }
+
+    .main-section-article-div {
+        width: 100%;
+        padding: 0px;
+        display: flex;
+        position: relative;
+        flex-wrap: wrap;
+        flex-direction: row; 
+        justify-content: stretch; 
+    }
+  
+    .main-section-article-div-i {
+       
+        display: block;
+        color: #39b54a;
+        font-size: 2vw; /* tamaño del camión */
+        padding: 6px;
+        width: 3.5vw; /* tamaño del círculo */
+        height: auto;
+        border: 1px solid #39b54a;
+        background-color: #FFF;
+        border-radius: 50%;
+        position: absolute;
+        right: 5px;
+        top: -47px;
+        transition: all;
+    }
+
+    .precio {
+        font-size: 1.7vw;
+        width: auto;
+        }  
+    .descuento {
+        font-size: 1.7vw;
+        margin-left: 1vw;
+        width: auto;
+        color: #39b54a;
+        font-weight: bold;
     }
 
 }
